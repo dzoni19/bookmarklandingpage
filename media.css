@@ -1,0 +1,382 @@
+@media only screen and (max-width: 650px) {
+  .container {
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 100%;
+    margin: unset;
+    overflow: hidden;
+  }
+  .grid,
+  .grid-3,
+  .features-display-item-active,
+  .download-box.grid-3 {
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+  }
+  .flex {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .max-width {
+    max-width: 100%;
+    width: 100%;
+    margin: unset;
+    overflow: unset;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  p {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+
+  .btn {
+    padding: 1rem 0.7rem;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .buttons.flex {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .showcase::after {
+    width: 75%;
+    height: clamp(13rem, 35%, 19rem);
+    bottom: 45%;
+
+    right: 0;
+    border-bottom-left-radius: 40%;
+    border-top-left-radius: 40%;
+  }
+
+  .showcase .bookmark {
+    z-index: 25;
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+  }
+
+  .toggle {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 25;
+  }
+
+  .showcase .list-item {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .showcase .list-item:nth-child(4) {
+    border-bottom: 0;
+  }
+
+  .showcase .mainBar a {
+    color: var(--white);
+    margin: 0;
+    font-size: 24px;
+  }
+
+  .showcase .social-items {
+    display: flex;
+    height: 4rem;
+    margin-top: 3rem;
+  }
+
+  .menu-btn {
+    background: transparent;
+    border: 2px solid var(--white);
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .mainBar {
+    display: none;
+  }
+
+  .showcase-display.flex {
+    gap: 5rem;
+  }
+
+  .showcase-display {
+    padding: 2rem 0;
+  }
+
+  .showcase-display-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  .showcase-display.flex {
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .showcase-display-text {
+    padding: 2rem 0;
+  }
+
+  .showcase-display-text h1 {
+    text-align: center;
+    width: 100%;
+  }
+  .showcase-display-right svg {
+    width: 100%;
+  }
+
+  /* features */
+
+  .features-display-text.flex {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #features {
+    height: 100%;
+  }
+  #features::after {
+    width: 75%;
+    height: 19%;
+    bottom: 30%;
+    left: 0;
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+  }
+  #features .container {
+    padding: 0 1rem;
+  }
+
+  .features-display-text {
+    padding: 0;
+    margin-top: 5rem;
+  }
+  .features-display-text a {
+    display: none;
+  }
+
+  /* downloar */
+  #download {
+    padding: 0;
+  }
+  .download-box.grid-3 {
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .download-box-card-1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .download-box-card-2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .download-box-card-3 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .download-box-card.flex {
+    flex-wrap: wrap;
+    max-height: 100%;
+  }
+
+  .card-down {
+    height: unset;
+  }
+
+  /* faq */
+  #faq {
+    margin-top: 4rem;
+  }
+
+  #faq .title-heading h1 {
+    white-space: break-spaces;
+  }
+  #faq .accordion-heading h3 {
+    font-size: 20px;
+  }
+  .accordions {
+    margin-top: 3rem;
+  }
+  .accordion-heading.flex {
+    text-align: left;
+    flex-wrap: nowrap;
+  }
+
+  /* footer */
+
+  .contact-form.flex {
+    height: unset;
+  }
+
+  .form-btn:hover {
+    border: none;
+  }
+  .footer-dark.flex {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-dark .mainBar.flex {
+    flex-direction: column;
+  }
+  #footer .mainBar {
+    margin: 3rem 0;
+    display: flex;
+  }
+  .footer .bookmark {
+    width: 148px;
+  }
+  .form-input,
+  .contact-form input,
+  .form-btn {
+    width: 100%;
+  }
+  .footer-dark-left.flex {
+    gap: 0;
+  }
+
+  .form-btn {
+    margin-top: 2rem;
+  }
+}
+
+@media (651px <= width <= 825px) {
+  .btn {
+    font-size: 12px;
+  }
+  .showcase .bookmark {
+    width: 248px;
+  }
+  .showcase .mainBar a {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .showcase .list-item a {
+    margin: 0 1rem;
+  }
+  .showcase::after {
+    width: 35%;
+    height: 13rem;
+    bottom: 35%;
+    transform: translateY(50%);
+    border-bottom-left-radius: 40%;
+    border-top-left-radius: 40%;
+  }
+  .showcase-display-text h1 {
+    white-space: nowrap;
+  }
+
+  #features::after {
+    width: 45%;
+    height: 15rem;
+    bottom: 15%;
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+  }
+  .features-display-text p {
+    padding: 0;
+  }
+
+  .download-box.grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .download-box.grid-3 {
+    grid-template-rows: repeat(3, 4rem);
+  }
+
+  .download-box-card.flex {
+    flex-wrap: wrap;
+    height: 17rem;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    padding: 0;
+  }
+  .download-box-card {
+    justify-self: center;
+  }
+  .card-upper img {
+    margin-bottom: 2rem;
+    width: 3rem;
+  }
+  .card-upper h2 {
+    font-size: 20px;
+  }
+
+  .card-down {
+    height: unset;
+    padding: 1rem 0 0 0;
+  }
+  .card-down .btn-blue {
+    width: 100%;
+    white-space: pre-wrap;
+  }
+}
+
+@media (820px <= width <= 1050px) {
+  .showcase::after {
+    width: 35%;
+    height: 17rem;
+    bottom: 10%;
+  }
+  /* features */
+  .download-box.grid-3 {
+    gap: 1rem;
+    grid-template-rows: repeat(3, 2rem);
+  }
+
+  .download-box-card {
+    max-width: 15rem;
+  }
+
+  .card-down {
+    height: unset;
+  }
+}
+
+@media (1650px <= width) {
+  .container {
+    padding: 0 5rem;
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: auto;
+  }
+
+  #showcase::after {
+    height: 25rem;
+  }
+  #features::after {
+    bottom: 0%;
+    height: 25rem;
+  }
+
+  .features-display-item-active {
+    height: auto;
+  }
+
+  .download-box-card {
+    justify-self: center;
+  }
+}
